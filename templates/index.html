@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+      <h1>Welcome to Destination Findr, {{ user_obj.username }}!</h1>
+      <h2>We Help Optimize your Travel Experience</h2>
+      <a href="findr" class="btn-get-started scrollto">Get Started Now</a>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-xl-6 col-lg-7" data-aos="fade-right">
+            <img src="/static/img/city2.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
+            <h3 data-aos="fade-up">Providing you with the Most Unique Travel Destinations</h3>
+            <p data-aos="fade-up">
+              Avoid just going to the overpriced and overcrowded destinations and instead find the hidden gems.
+            </p>
+            <div class="icon-box" data-aos="fade-up">
+              <i class="bx bx-map-alt"></i>
+              <h4>Precise Location</h4>
+              <p>We provide exact locations and directions to the destinations shown on our platform</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bxs-pie-chart-alt-2"></i>
+              <h4>Better Planning</h4>
+              <p>Plan on visiting the destinations that truly matter and maximize your time on vacation</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bxs-camera-plus"></i>
+              <h4>Great Photo-Ops</h4>
+              <p>We provide you with some of the most magnificient places that are fantastic for photography</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  
+{% endblock %}
