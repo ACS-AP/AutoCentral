@@ -1,4 +1,4 @@
-rom flask import Flask, render_template, request, redirect, url_for, session, flash
+from flask import Flask, render_template, request, redirect, url_for, session, flash
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 import os
@@ -56,6 +56,10 @@ def findr():
 
 
 #Car Pages
+
+@app.route('/camry')
+def camry():
+    return render_template('camry.html')
 
 #------------------------------------------------
 
