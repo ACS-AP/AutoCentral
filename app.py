@@ -65,6 +65,10 @@ def camry():
 def ford():
     return render_template('ford.html')
 
+@app.route('/civic')
+def civc():
+    return render_template('civic.html')
+
 #------------------------------------------------
 
 @app.route('/contact')
@@ -138,4 +142,4 @@ def comment_del(comment_id):
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=7000)
+    app.run(debug=True, port=5000)
