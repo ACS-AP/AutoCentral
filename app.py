@@ -77,6 +77,22 @@ def rogue():
 def highlander():
     return render_template('highlander.html')
 
+@app.route('/tesla')
+def tesla():
+    return render_template('tesla.html')
+
+@app.route('/jeep')
+def jeep():
+    return render_template('jeep.html')
+
+@app.route('/ram')
+def ram():
+    return render_template('ram.html')
+
+@app.route('/sub')
+def sub():
+    return render_template('sub.html')
+
 #------------------------------------------------
 
 @app.route('/contact')
