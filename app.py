@@ -69,6 +69,14 @@ def ford():
 def civc():
     return render_template('civic.html')
 
+@app.route('/rogue')
+def rogue():
+    return render_template('rogue.html')
+
+@app.route('/highlander')
+def highlander():
+    return render_template('highlander.html')
+
 #------------------------------------------------
 
 @app.route('/contact')
