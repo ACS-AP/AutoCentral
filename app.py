@@ -61,6 +61,10 @@ def findr():
 def camry():
     return render_template('camry.html')
 
+@app.route('/ford')
+def ford():
+    return render_template('ford.html')
+
 #------------------------------------------------
 
 @app.route('/contact')
